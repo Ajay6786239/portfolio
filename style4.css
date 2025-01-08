@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #1a1a1a; /* Light Black */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation */
+a {
+    text-decoration: none;
+    color: #66c2ff; /* Light Blue */
+}
+
+header {
+    padding: 20px;
+    background: #003366; /* Dark Blue */
+    color: #f0f4f8; /* Light Gray */
+    text-align: center;
+}
+
+header h4 {
+    margin: 0;
+}
+
+/* Project Details */
+h1, h2, h4 {
+    color: black; /* Light Gray */
+    margin-bottom: 10px;
+}
+.ekk{
+    color:white;
+}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+p {
+    color: black;
+    line-height: 1.6;
+}
+
+/* Overview Section */
+.overview, .reg, .nutt, .inter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff; /* White */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    width: 90%;
+}
+
+.overview img, .reg img, .nutt img, .inter img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    background: #66c2ff; /* Light Blue */
+    color: #003366; /* Dark Blue */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button a {
+    color: #003366; /* Dark Blue */
+    text-decoration: none;
+}
+
+button:hover {
+    background: #3399ff; /* Slightly Darker Blue */
+}
+
+button a:hover {
+    color: purple; /* Slightly Darker Blue */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .overview, .reg, .nutt, .inter {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .overview img, .reg img, .nutt img, .inter img {
+        max-width: 50%;
+    }
+
+    .overview h2, .reg h2, .nutt h2, .inter h2 {
+        font-size: 1.75rem;
+    }
+}

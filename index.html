@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+    
+        <!-- Font Awesome CSS for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Custom CSS File -->
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- EmailJS Library -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+        <!-- Initialize EmailJS -->
+        <script type="text/javascript">
+            emailjs.init('4gPTsBr2VALGFiTJJ'); // Replace with your EmailJS user ID
+        </script>
+    
+        <!-- Content Security Policy -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://api.emailjs.com;">
+    
+        <!-- Custom JavaScript File -->
+        <script defer src="script.js"></script>
+    </head>
+    
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">My Portfolio
+            <img class="logo" src="./images/j.jpg" alt="Logo">
+        </div>
+        
+        <ul class="nav-link" id="homes">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Side Navbar -->
+
+
+<!-- Menu Button -->
+<div class="menu-button" id="menuButton">
+    &#9776; <!-- Three dot icon -->
+</div>
+<div id="home">
+    <p></p>
+
+</div>
+
+
+    <!-- Home Section -->
+    <section  class="home-section">
+        <h1>Hello, I'm Ajay P.</h1>
+        <p>A Passionate Web Developer</p>
+        <a href="https://drive.google.com/file/d/1hIwqjjAbTGS7-S-6UwQK5h2Tr2twaixo/view" class="cta-button">Download Resume</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a skilled web developer with a strong portfolio. Passionate about staying updated on front-end and back-end technologies. I thrive in dynamic teams, bringing innovative ideas to life.</p>
+        <img class="me" src="./images/a.jpg" alt="Ajay P.">
+        <button><a href="port.html" target="_blank" class="portfolio">Learn More -></a></button>
+    </section>
+    <!-- Chatbot Section -->
+<div class="chatbot-section">
+    <div class="chatbot-container">
+        <div class="chatbot"></div>
+    </div>
+    <button class="click-to-talk">Click to Talk</button>
+</div>
+
+
+<div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+        <h4>Chat with Ajay's Assistant</h4>
+        <span class="close-btn" id="closeChat">X</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+        <!-- Messages will appear here -->
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="userMessage" placeholder="Type your message...">
+        <button id="sendButton"><i class="fa-regular fa-paper-plane"></i> Send</button>
+    </div>
+</div>
+</div>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skills">
+                <div class="skill">Python</div>
+                <div class="skill">C</div>
+                <div class="skill">Java</div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skills">
+                <div class="skill">Django</div>
+                <div class="skill">SQL</div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Others</h3>
+            <div class="skills">
+                <div class="skill">Git</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">VSCode</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="pro">
+
+        
+        <div class="project">
+            <a href="project1.html">
+                <h3>Loramax - E-Commerce Website</h3>
+                <p>Loramax is a responsive e-commerce website designed using HTML, CSS, and JavaScript, featuring a clean and modern user interface. The site includes dynamic product listings, a shopping cart functionality, and an integrated payment gateway to ensure a seamless shopping experience for users. With its focus on mobile-first design, Loramax is optimized for both desktop and mobile devices, providing a consistent and engaging experience across all platforms.</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="project3.html">
+                <h3>BookLib</h3>
+                <p>BookLib is an interactive web application designed to manage an online book library. Built with HTML, CSS, JavaScript, and a SQL backend, it allows users to add, view, and delete book entries effortlessly. The project features a user-friendly interface with options to categorize books by genre, author, or publication date. Data persistence is achieved through a SQL database, ensuring that book information remains available even after a page reload. BookLib is ideal for personal use or as a community resource for book enthusiasts.</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="project2.html">
+                <h3>Nutrition Tracker - React Web App</h3>
+                <p>Nutrition Tracker is an innovative React-based web application that helps users monitor their daily nutritional intake and make healthier food choices. The app provides a beautiful interface with categories like fruits, vegetables, and various foods, each offering detailed information on nutritional values, optimal consumption times, and preparation methods. Integrated with a nutrition API, the app ensures accurate and real-time data. It also features a unique image-based product name identification tool, allowing users to scan food items with a camera or upload images to instantly receive detailed information about the product. With an enhanced dashboard, a food scanner, and a comprehensive search functionality, Nutrition Tracker makes healthy eating both easy and enjoyable.</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="project4.html">
+                <h3>Weather App</h3>
+                <p> A responsive weather app that displays real-time temperature for any location worldwide. Integrated light and dark mode features for user preference, along with the ability to toggle between Celsius and Fahrenheit. The app offers a clean and interactive user interface, enhancing the user experience.
+
+                </p>
+            </a>
+
+            
+        </div>
+        <div class="project">
+            <a href="project5.html">
+                <h3>Anna University Gpa calculator</h3>
+
+                <p> A user-friendly tool designed to help students accurately calculate their CGPA and GPA based on Anna University's grading system. It features an intuitive interface, allowing users to input grades effortlessly and instantly view results, ensuring precision and ease of use.</p>
+            </a>
+
+            
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+ <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="form">
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" id="button">Send Message</button>
+    </form>
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/ajay6239/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Ajay6786239?tab=repositories" target="_blank">GitHub</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="mailto:ap6786239@gmail.com" class="connect-button">Let's Connect</a>
+    </div>
+</section>
+
+ 
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Ajay P. All rights reserved.</p>
+    </footer>
+</body>
+</html>

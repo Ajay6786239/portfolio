@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #1a1a1a; /* Light Black */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation */
+a {
+    text-decoration: none;
+    color: #66c2ff; /* Light Blue */
+}
+
+header {
+    padding: 20px;
+    background: #003366; /* Dark Blue */
+    color: #f0f4f8; /* Light Gray */
+    text-align: center;
+}
+
+header a {
+    color: #66c2ff; /* Light Blue */
+    font-size: 1.2rem;
+}
+
+header a:hover {
+    color: #3399ff; /* Slightly Darker Blue */
+}
+
+/* Project Details */
+h1, h2, h3, h4 {
+    color:black; /* Light Gray */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.ekk{
+    color:white;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-top: 15px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+p {
+    color:black;
+    line-height: 1.6;
+}
+
+/* Project Sections */
+.bok, .goal, .future {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff; /* White */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    width: 90%;
+}
+
+.bok img, .goal img, .future img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    background: #66c2ff; /* Light Blue */
+    color: #003366; /* Dark Blue */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button a {
+    color: #003366; /* Dark Blue */
+    text-decoration: none;
+}
+
+button:hover {
+    background: #3399ff; /* Slightly Darker Blue */
+}
+
+button a:hover {
+    color: purple; /* Slightly Darker Blue */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .bok, .goal, .future {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .bok img, .goal img, .future img {
+        max-width: 50%;
+    }
+}
